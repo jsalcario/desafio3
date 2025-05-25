@@ -6,7 +6,7 @@
       "Action": [
         "s3:PutObject"
       ],
-      "Resource": "arn:aws:s3:::test-bucket/*"
+      "Resource": "arn:aws:s3:::bucket-desafio3-jsa/*"
     }
   ]
 }
