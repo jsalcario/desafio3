@@ -6,7 +6,8 @@
 ## Paso 2: Crear usuario
 ```aws iam create-user --user-name s3-support```
 ### respuesta:
-```{
+```
+{
     "User": {
         "Path": "/",
         "UserName": "s3-support",
