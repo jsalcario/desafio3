@@ -19,4 +19,4 @@
 ```
 ## Paso 2: Crear rol
 ## Crear archivo con politicas de escritura en el bucket
-/s3_write_policy.json
+src/s3_write_policy.json
