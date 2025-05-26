@@ -26,7 +26,7 @@ aws iam create-user --user-name s3-support
 [s3_write_policy](policies/s3_write_policy.json)
 ## Crear la politica en awsCLI
 ```
-aws iam create-policy --policy-name S3WritePolicy --policy-document file://s3_write_policy.json
+aws iam create-policy --policy-name S3WritePolicy --policy-document file://policies/s3_write_policy.json
 ```
 ## Adjuntamos la politica de escritura del bucket al rol
 ```
