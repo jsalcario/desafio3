@@ -34,7 +34,7 @@ aws iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::000
 ```
 ## Asumimos el rol desde el usuario
 ### ejecutamos el comando `sts assume-role` que devolverá las credenciales temporales
-```
+```bash
 ROLE=$(awslocal sts assume-role --role-arn arn:aws:iam::000000000000:role/S3WriteRole --role-session-name TestSession)
 export AWS_ACCESS_KEY_ID=$(echo $ROLE | jq -r '.Credentials.AccessKeyId')
 export AWS_SECRET_ACCESS_KEY=$(echo $ROLE | jq -r '.Credentials.SecretAccessKey')
