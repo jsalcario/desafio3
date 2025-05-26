@@ -32,7 +32,7 @@ aws iam create-policy --policy-name S3WritePolicy --policy-document file://polic
 [trust_policy](policies/trust_policy.json)
 ## Crear el rol
 ```
-awslocal iam create-role --role-name S3WriteRole --assume-role-policy-document file://trust_policy.json
+awslocal iam create-role --role-name S3WriteRole --assume-role-policy-document file://policies/trust_policy.json
 ```
 ## Adjuntamos la politica de escritura del bucket al rol
 ```
