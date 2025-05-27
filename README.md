@@ -12,7 +12,7 @@ Creamos el usuario s3-support solicitado:
 ```bash
 aws iam create-user --user-name s3-support
 ```
-Se define la politica en json que permite escribir en el bucket:
+Se define la politica en json que permite escribir en el bucket y lo guardamos con el nombre `s3_write_policy.json`:
 ```json
 {
   "Version": "2012-10-17",
@@ -27,7 +27,7 @@ Se define la politica en json que permite escribir en el bucket:
   ]
 }
 ```
-Creamos el rol que podra ser asumido por el usuario para obtener permisos de escritura en el bucket:
+Creamos el rol que podra ser asumido por el usuario para obtener permisos de escritura en el bucket y lo guardamos con el nombre `trust_policy.json`:
 ```json
 {
   "Version": "2012-10-17",
