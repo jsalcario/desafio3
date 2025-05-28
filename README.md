@@ -106,5 +106,5 @@ Respuesta:
 ```
 Ahora adjuntamos la politica de escritura en el bucket al rol:
 ```bash
-awslocal iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::000000000000:policy/S3WritePolicy
+aws iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::339713178219:policy/S3WritePolicy
 ```
