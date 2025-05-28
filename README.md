@@ -2,7 +2,7 @@
 
 ## Requisito 1: Crear bucket.
 ```bash
-aws s3 mb s3://bucket-desafio-jsa
+aws s3 mb s3://bucket-desafio3-jsa
 ```
 respuesta:
 make_bucket: bucket-desafio-jsa
@@ -22,7 +22,7 @@ Se define la politica en json que permite escribir en el bucket y lo guardamos c
       "Action": [
         "s3:PutObject"
       ],
-      "Resource": "arn:aws:s3:::bucket-desafio-jsa/*"
+      "Resource": "arn:aws:s3:::bucket-desafio3-jsa/*"
     }
   ]
 }
