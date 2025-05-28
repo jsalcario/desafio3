@@ -59,7 +59,52 @@ Subimos estos dos ultimos archivos json en la consola de AWS.
 ```bash
 aws iam create-policy --policy-name S3WritePolicy --policy-document file://s3_write_policy.json
 ```
+respuesta:
+```json
+{
+    "Policy": {
+        "PolicyName": "S3WritePolicy",
+        "PolicyId": "ANPAU6GD3XJVZSEKUCMWT",
+        "Arn": "arn:aws:iam::339713178219:policy/S3WritePolicy",
+        "Path": "/",
+        "DefaultVersionId": "v1",
+        "AttachmentCount": 0,
+        "PermissionsBoundaryUsageCount": 0,
+        "IsAttachable": true,
+        "CreateDate": "2025-05-28T02:57:20+00:00",
+        "UpdateDate": "2025-05-28T02:57:20+00:00"
+    }
+}
+```
 ### Creamos el rol:
 ```bash
 aws iam create-role --role-name S3WriteRole --assume-role-policy-document file://trust_policy.json
+```
+Respuesta:
+```json
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "S3WriteRole",
+        "RoleId": "AROAU6GD3XJVQIJ432SZQ",
+        "Arn": "arn:aws:iam::339713178219:role/S3WriteRole",
+        "CreateDate": "2025-05-28T02:58:32+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "AWS": "arn:aws:iam::339713178219:user/s3-support"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}
+```
+Ahora adjuntamos la politica de escritura en el bucket al rol:
+```bash
+awslocal iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::000000000000:policy/S3WritePolicy
 ```
