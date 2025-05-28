@@ -54,11 +54,12 @@ Creamos el rol que podra ser asumido por el usuario para obtener permisos de esc
   ]
 }
 ```
-Creamos la politica:
+Subimos estos dos ultimos archivos json en la consola de AWS.
+### Creamos la politica:
 ```bash
 aws iam create-policy --policy-name S3WritePolicy --policy-document file://s3_write_policy.json
 ```
-Siguiente creamos el rol:
+### Creamos el rol:
 ```bash
 aws iam create-role --role-name S3WriteRole --assume-role-policy-document file://trust_policy.json
 ```
