@@ -39,7 +39,7 @@ Se define la politica en json que permite escribir en el bucket y lo guardamos c
   ]
 }
 ```
-Creamos el rol que podra ser asumido por el usuario para obtener permisos de escritura en el bucket y lo guardamos con el nombre `trust_policy.json`:
+Creamos el rol que podra ser asumido por el usuario para obtener permisos de escritura en el bucket y lo guardamos con el nombre `trust_policy.json`, NOTA: en el numero de 12 digitos colocamos el arn del usuario creado:
 ```json
 {
   "Version": "2012-10-17",
@@ -47,7 +47,7 @@ Creamos el rol que podra ser asumido por el usuario para obtener permisos de esc
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::000000000000:user/s3-support"
+        "AWS": "arn:aws:iam::339713178219:user/s3-support"
       },
       "Action": "sts:AssumeRole"
     }
