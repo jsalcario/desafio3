@@ -1,13 +1,13 @@
 # Desafio3
 
-## Requisito 1: Crear bucket.
+### Crear bucket.
 ```bash
 aws s3 mb s3://bucket-desafio3-jsa
 ```
 respuesta:
 make_bucket: bucket-desafio-jsa
 
-## Requisito 2: Crear rol con politica de escritura sobre el bucket.
+### Crear rol con politica de escritura sobre el bucket.
 Creamos el usuario s3-support solicitado:
 ```bash
 aws iam create-user --user-name s3-support
@@ -107,4 +107,11 @@ Respuesta:
 Ahora adjuntamos la politica de escritura en el bucket al rol:
 ```bash
 aws iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::339713178219:policy/S3WritePolicy
+```
+### Asumir el rol desde el usuario:
+
+```bash
+awslocal sts assume-role \
+  --role-arn arn:aws:iam::339713178219:role/S3WriteRole \
+  --role-session-name TestDesafio3
 ```
