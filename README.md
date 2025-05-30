@@ -111,7 +111,7 @@ aws iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::339
 ### Asumir el rol desde el usuario:
 
 ```bash
-awslocal sts assume-role \
+aws sts assume-role \
   --role-arn arn:aws:iam::339713178219:role/S3WriteRole \
   --role-session-name TestDesafio3
 ```
