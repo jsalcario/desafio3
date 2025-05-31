@@ -18,9 +18,9 @@ respuesta:
     "User": {
         "Path": "/",
         "UserName": "s3-support",
-        "UserId": "AIDAU6GD3XJVXTHLXOXDI",
+        "UserId": "AIDAU6GD3XJVXHBPAPFNA",
         "Arn": "arn:aws:iam::339713178219:user/s3-support",
-        "CreateDate": "2025-05-28T02:43:41+00:00"
+        "CreateDate": "2025-05-31T22:33:07+00:00"
     }
 }
 ```
