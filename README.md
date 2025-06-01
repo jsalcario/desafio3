@@ -33,9 +33,9 @@ respuesta:
 {
     "AccessKey": {
         "UserName": "s3-support",
-        "AccessKeyId": "",
+        "AccessKeyId": "AccessKeyId",
         "Status": "Active",
-        "SecretAccessKey": "",
+        "SecretAccessKey": "SecretAccessKey",
         "CreateDate": "2025-06-01T22:47:33+00:00"
     }
 }
