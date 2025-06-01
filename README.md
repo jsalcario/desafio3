@@ -40,6 +40,8 @@ respuesta:
     }
 }
 ```
+Guardamos en algun lugar seguro el `AccesKeyId` y el `SecretAccessKey`.
+
 Se define la politica en json que permite escribir en el bucket y lo guardamos con el nombre `s3_write_policy.json`:
 ```json
 {
