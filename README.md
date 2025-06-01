@@ -80,15 +80,15 @@ respuesta:
 {
     "Policy": {
         "PolicyName": "S3WritePolicy",
-        "PolicyId": "ANPAU6GD3XJVROQH7RH4H",
+        "PolicyId": "ANPAU6GD3XJVSP2CE3VDD",
         "Arn": "arn:aws:iam::339713178219:policy/S3WritePolicy",
         "Path": "/",
         "DefaultVersionId": "v1",
         "AttachmentCount": 0,
         "PermissionsBoundaryUsageCount": 0,
         "IsAttachable": true,
-        "CreateDate": "2025-05-31T22:38:45+00:00",
-        "UpdateDate": "2025-05-31T22:38:45+00:00"
+        "CreateDate": "2025-06-01T22:54:32+00:00",
+        "UpdateDate": "2025-06-01T22:54:32+00:00"
     }
 }
 ```
@@ -102,9 +102,9 @@ Respuesta:
     "Role": {
         "Path": "/",
         "RoleName": "S3WriteRole",
-        "RoleId": "AROAU6GD3XJVZYBZVA3U3",
+        "RoleId": "AROAU6GD3XJVQAJVF3GPV",
         "Arn": "arn:aws:iam::339713178219:role/S3WriteRole",
-        "CreateDate": "2025-05-31T22:39:43+00:00",
+        "CreateDate": "2025-06-01T23:01:17+00:00",
         "AssumeRolePolicyDocument": {
             "Version": "2012-10-17",
             "Statement": [
