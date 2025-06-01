@@ -18,9 +18,9 @@ respuesta:
     "User": {
         "Path": "/",
         "UserName": "s3-support",
-        "UserId": "AIDAU6GD3XJVXHBPAPFNA",
+        "UserId": "AIDAU6GD3XJVQI6735WGT",
         "Arn": "arn:aws:iam::339713178219:user/s3-support",
-        "CreateDate": "2025-05-31T22:33:07+00:00"
+        "CreateDate": "2025-06-01T22:46:16+00:00"
     }
 }
 ```
@@ -29,6 +29,17 @@ Creamos las credenciales programaticas:
 aws iam create-access-key --user-name s3-support
 ```
 respuesta:
+```json
+{
+    "AccessKey": {
+        "UserName": "s3-support",
+        "AccessKeyId": "",
+        "Status": "Active",
+        "SecretAccessKey": "",
+        "CreateDate": "2025-06-01T22:47:33+00:00"
+    }
+}
+```
 Se define la politica en json que permite escribir en el bucket y lo guardamos con el nombre `s3_write_policy.json`:
 ```json
 {
