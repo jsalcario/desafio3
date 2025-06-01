@@ -24,6 +24,11 @@ respuesta:
     }
 }
 ```
+Creamos las credenciales programaticas:
+```bash
+aws iam create-access-key --user-name s3-support
+```
+respuesta:
 Se define la politica en json que permite escribir en el bucket y lo guardamos con el nombre `s3_write_policy.json`:
 ```json
 {
