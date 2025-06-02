@@ -128,15 +128,10 @@ Ahora adjuntamos la politica de escritura en el bucket al rol:
 ```bash
 aws iam attach-role-policy --role-name S3WriteRole --policy-arn arn:aws:iam::339713178219:policy/S3WritePolicy
 ```
-### Asumir el rol desde el usuario:
-
-Conectar CLI con las credenciales de s3-support:
+# Nota al profesor:
+No logre resolver el desafio.
+a la hora de querer asumir el rol con:
 ```bash
-aws configure --profile s3-support
+aws sts assume-role --role-arn arn:aws:iam::339713178219:role/S3WriteRole --role-session-name TestSession
 ```
-
-```bash
-aws sts assume-role \
-  --role-arn arn:aws:iam::339713178219:role/S3WriteRole \
-  --role-session-name TestDesafio3
-```
+me dice que el usuario con el que estoy usando el comando no tiene permisos para asumir el rol, me logueo con el usuario s3-support por la consola de aws y me dice que no tiene permisos para usar la CLI por lo tanto no puedo ingresar el comando de assume-role
